@@ -115,12 +115,23 @@ Reference configuration
                 Kernel_IoTG               | 5.15.71 (lts-v5.15.71-adl-linux-221121T044440Z)
 		=======================   =======
 
-Validation results
+*Validation results
 ------------------
 
 Stable Releases (IoT) are validated with SR-IOV mode on Alder Lake(ADL)Intel® platform in the following function domains. Validation cycles are performed on GMS user signed widevine enabled image as required by google certification requirements
 
-.. figure:: stable-release_iot/images/Q422-A12_Validation_Result.png
+Below patches to be added as part of the release manifest to attain below results [Avaibale in Latest vendor-intel-utils-vertical-iot].  
+
+* 0039-Update-SRIOV-QEMU-patching.patch
+* 0042-ADL-Android-S-Media-Performance-range-fix.patch
+* 0046-Mixin-up-patch-for-Media-performace-fix.patch
+* 0007-MediaSDK_C2-refactor-regression.patch
+* 0001-Revert-Modify-IA-perf-variant-of-library-to-have-sam.patch
+* 0002-Revert-Generate-avx2-versions-of-libnueralnetworks.s.patch
+* 0001-CCodecBufferChannel-Report-an-error-after-reallocati.patch
+* 0038-Fix-logic-to-display-gvt-prompt.patch
+
+.. figure:: stable-release_iot/images/Q422-2-A12_Validation_Result.png
     :align: right
     :width: 750px
 
